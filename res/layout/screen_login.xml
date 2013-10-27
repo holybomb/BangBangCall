@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/screen_login_user"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:ems="10"
+        android:hint="请输入用户名"
+        android:textSize="15sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/screen_login_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/screen_login_user"
+        android:layout_alignRight="@+id/screen_login_user"
+        android:layout_below="@+id/screen_login_user"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/screen_login_btn"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/screen_login_pw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="41dp"
+        android:onClick="onLoginClicker"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/screen_login_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:onClick="onSettingClicker"
+        android:text="设置" />
+
+</RelativeLayout>
